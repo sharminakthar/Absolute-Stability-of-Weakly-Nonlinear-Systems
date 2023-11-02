@@ -19,8 +19,7 @@ A further related area of interest is that of the consensus algorithms \emph{opt
 The work has three major technical goals, 
 - To develop consensus control laws for networks of the system given above. Special attention will be devoted to uncovering the minimal amount of knowledge of $\psi(\cdot)$ required; this is an open theoretical problem.
 -  To explore optimality properties of the consensus algorithms and obtain conditions which ensure that cost functions of the form
- $ \int_0^{\infty} L(x,u,t) ~ dt $
  are minimised. Special attention will be devoted to uncovering the relationship between optimality, the underlying graph structure of the network and and the properties of $\psi(\cdot)$. 
    The simulation and demonstration of the network systems and consensus algorithms in MATLAB and Simulink
 
-The goals are not binary and should yield interesting results, possibly suitable for conference publication, which is a stretch goal of the scholarship.
+The goals are not binary and should yield interesting results, possibly suitable for conference publication, which is a stretch goal of the project.
