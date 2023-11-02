@@ -8,11 +8,8 @@ Control of a distributed networks of agents is one of most important topics in c
 ## Problem
 A distributed system is a group of network components that work together to act as a single entity. For them to act as a single entity they must agree on `some' data value i.e. 
 consensus.  To obtain this, there are algorithms which instruct each agent, also known as consensus protocols. These protocols must be fault tolerant, resilient, and designed to deal with a limited number of faulty processes.  
-The majority of these algorithms make the strong assumption that the plant is _linear_. Whereas in reality, all practical control systems are _nonlinear_ to some degree, with many being representable, approximately by the state-space equations:
-$
- \dot x(t) & = Ax(t) + B\psi \big( u(t) \big) \\
-       y(t) & = C x(t)
-$
+The majority of these algorithms make the strong assumption that the plant is _linear_. Whereas in reality, all practical control systems are _nonlinear_ to some degree, with many being representable.
+
 where the function $\psi(\cdot)$ is a static non-linearity, belonging to some loosely defined class, with not all information about this function known. The above class of systems is similar to a standard linear state-space system but exhibits much richer behaviour due to the presence of $\psi(\cdot)$.
 
 The work will explore the properties of $\psi(\cdot)$, and the amount of knowledge required of this function, in order for networks of this type of system to reach a consensus. An observer for the weakly non-linear system above was proposed in [1] and will be used as the foundation of an approach towards consensus algorithm construction. A key difficulty which will require careful consideration is that of determining the required amount of information (we know about a system) in order for the system to reach consensus.
